@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import dummyData from './dummy-data';
 import Posts from './components/Posts/Posts.js';
 import SearchBar from './components/SearchBar/SearchBar.js';
+import Comment from './components/Comments/Comment';
 
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
 // Import the dummyData
@@ -45,6 +46,7 @@ const App = () => {
       {/* {SearchBar posts./} */}
       <SearchBar />
       <Posts likePost = {likePost} posts = {posts}/>
+      <Comment comment = {posts} />
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
